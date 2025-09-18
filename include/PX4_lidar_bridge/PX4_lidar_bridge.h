@@ -1,5 +1,5 @@
-#ifndef PX4_lidar_BRIDGE
-#define PX4_lidar_BRIDGE
+#ifndef PX4_LIDAR_BRIDGE
+#define PX4_LIDAR_BRIDGE
 
 #include <nav_msgs/Odometry.h>
 #include <mavros_msgs/CompanionProcessStatus.h>
@@ -23,10 +23,10 @@ namespace bridge {
   MAV_STATE_FLIGHT_TERMINATION,
 };
 
-class PX4_lidar_Bridge {
+class PX4_Lidar_Bridge {
  public:
-  PX4_lidar_Bridge(const ros::NodeHandle& nh);
-  ~PX4_lidar_Bridge();
+  PX4_Lidar_Bridge(const ros::NodeHandle& nh);
+  ~PX4_Lidar_Bridge();
 
   void publishSystemStatus();
 

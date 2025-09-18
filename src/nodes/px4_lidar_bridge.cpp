@@ -12,6 +12,7 @@ PX4_Lidar_Bridge::PX4_Lidar_Bridge(const ros::NodeHandle& nh)
     : nh_(nh) {
 
   // initialize subscribers
+  // arrumar topic name
   odom_sub_ = nh_.subscribe<const nav_msgs::Odometry&>(
       "/camera/odom/sample_throttled", 10, &PX4_Lidar_Bridge::odomCallback, this);
   // publishers

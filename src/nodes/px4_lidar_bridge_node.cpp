@@ -3,9 +3,9 @@
 using namespace bridge;
 
 int main(int argc, char** argv) {
-  ros::init(argc, argv, "PX4_lidar_NRA_bridge_node");
+  ros::init(argc, argv, "PX4_lidar_bridge_node");
   ros::NodeHandle nh("~");
-  PX4_Realsense_Bridge Bridge(nh);
+  PX4_Lidar_Bridge Bridge(nh);
 
   ros::spin();
 
